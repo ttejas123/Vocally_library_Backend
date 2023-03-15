@@ -12,8 +12,8 @@
 - Custom Logger using Event Listener.
 - Rate limmiter is in Use to Limit Api Calls
 - REST and GraphQL Both are available <br />
-      - REST -> **npm run start**  OR **npm run start:dev**
-      - GraphQl -> **npm run start:Gql**
+      - REST -> **npm run start**  OR **npm run start:dev** <br />
+      - GraphQl -> **npm run start:Gql** <br />
       - Both in same time -> **npm run start:Gql:dev** (but run this command first: **npx prisma migrate dev --name init**)
 
 
