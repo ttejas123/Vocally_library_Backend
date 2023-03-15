@@ -23,3 +23,8 @@
 - To run Locally - you need to have nodeJS pre install  😃
     - step a: install dependancy : **npm install**
     - step b: start project      : **npm run start**   OR    **npm run start:dev**
+
+
+## API Documentation and Architecture Diagram
+- API DOC : [https://www.figma.com/file/ImmvgXqUM2l0DMRKfpmd2r/Vocally-Assignment.?node-id=0%3A1&t=wCDJqU8bByDCtpte-0](https://documenter.getpostman.com/view/15257678/2s93JwN26e)
+- ER : [[https://www.figma.com/file/ImmvgXqUM2l0DMRKfpmd2r/Vocally-Assignment.?node-id=0%3A1&t=wCDJqU8bByDCtpte-0]](https://www.figma.com/file/ImmvgXqUM2l0DMRKfpmd2r/Vocally-Assignment.?node-id=0%3A1&t=wCDJqU8bByDCtpte-0)
