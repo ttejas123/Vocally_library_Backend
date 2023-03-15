@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider             = "sqlite"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+// Necessary for Next auth
+model Student {
+  id          String        @id @default(cuid())
+  name        String
+  email       String        @unique
+  password    String
+  books       Book[]        @relation("StudentBook")
+  StudentBook StudentBook[]
+}
+
+model Book {
+  id          String        @id @default(cuid())
+  name        String
+  author      String
+  students    Student[]     @relation("StudentBook")
+  StudentBook StudentBook[]
+}
+
+model StudentBook {
+  id        String  @id @default(cuid())
+  student   Student @relation(fields: [studentId], references: [id])
+  studentId String
+  book      Book    @relation(fields: [bookId], references: [id])
+  bookId    String
+}
